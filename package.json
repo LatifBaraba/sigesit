@@ -1,0 +1,22 @@
+{
+  "name": "asdf",
+  "version": "1.0.0",
+  "description": "asdf",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass assets/scss/style.scss assets/css/style.css --style=compressed -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LatifBaraba/sigesit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LatifBaraba/sigesit/issues"
+  },
+  "homepage": "https://github.com/LatifBaraba/sigesit#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
