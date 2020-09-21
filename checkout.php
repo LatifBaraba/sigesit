@@ -107,7 +107,7 @@
         <!--================Checkout Area =================-->
         <section class="checkout_area section_padding">
           <div class="container">
-            <div class="returning_customer">
+            <!-- <div class="returning_customer">
               <div class="check_title">
                 <h2>
                   Returning Customer?
@@ -149,7 +149,7 @@
               </div>
               <input type="text" placeholder="Enter coupon code" />
               <a class="tp_btn" href="#">Apply Coupon</a>
-            </div>
+            </div> -->
             <div class="billing_details">
               <div class="row">
                 <div class="col-lg-8">
@@ -220,7 +220,7 @@
                     </div>
                   </form>
                 </div>
-                <div class="col-lg-4">
+                <!-- <div class="col-lg-4">
                   <div class="order_box">
                     <h2>Your Order</h2>
                     <ul class="list">
@@ -295,7 +295,7 @@
                     </div>
                     <a class="btn_3" href="#">Proceed to Paypal</a>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>

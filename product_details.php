@@ -1,3 +1,26 @@
+<?php 
+    if(isset($_POST["submit"])) {
+        
+        if($_POST['warna'] != null) {
+
+            // var_dump("1",$_POST['warna'], $_POST['qty']); exit;
+            
+            $_SESSION['order'] = [
+                'warna' => $_POST['warna'],   
+                'qty' => $_POST['qty']
+            ];
+
+            header("Location: checkout.php");
+            exit;
+        } else {
+            
+            $_SESSION['pilihWarna'] = 1 ;
+            
+        }
+        // var_dump("2",$_SESSION['order']); exit;
+        // session_destroy();
+    }
+?>
 <!doctype html>
 <html lang="zxx">
 <head>
@@ -30,6 +53,7 @@
     <header>
         <!-- Header Start -->
         <div class="header-area">
+            
             <div class="main-header header-sticky">
                 <div class="container-fluid">
                     <div class="menu-wrapper">
@@ -92,6 +116,14 @@
         <!-- Header End -->
     </header>
     <main>
+            <?php if(isset($_SESSION["pilihWarna"]) == 1) : ?>
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    Silahkan Pilih Warna
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            <?php endif; unset($_SESSION['pilihWarna']); ?>
         <!-- Hero Area Start-->
         <div class="slider-area ">
             <div class="single-slider slider-height2 d-flex align-items-center">
@@ -108,48 +140,80 @@
         </div>
         <!-- Hero Area End-->
         <!--================Single Product Area =================-->
-        <div class="product_image_area">
-            <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12">
-                <div class="product_img_slide owl-carousel">
-                    <div class="single_product_img">
-                        <img src="assets/img/gallery/gallery1.png" alt="#" class="img-fluid">
-                    </div>
-                    <div class="single_product_img">
-                        <img src="assets/img/gallery/gallery01.png" alt="#" class="img-fluid">
-                    </div>
-                    <div class="single_product_img">
-                        <img src="assets/img/gallery/gallery1.png" alt="#" class="img-fluid">
-                    </div>
-                </div>
-                </div>
-                <div class="col-lg-8">
-                <div class="single_product_text text-center">
-                    <h3>Foam filling cotton slow <br>
-                        rebound pillows</h3>
-                    <p>
-                        Seamlessly empower fully researched growth strategies and interoperable internal or “organic” sources. Credibly innovate granular internal or “organic” sources whereas high standards in web-readiness. Credibly innovate granular internal or organic sources whereas high standards in web-readiness. Energistically scale future-proof core competencies vis-a-vis impactful experiences. Dramatically synthesize integrated schemas. with optimal networks.
-                    </p>
-                    <div class="card_area">
-                        <div class="product_count_area">
-                            <p>Quantity</p>
-                            <div class="product_count d-inline-block">
-                                <span class="product_count_item inumber-decrement"> <i class="ti-minus"></i></span>
-                                <input class="product_count_item input-number" type="text" value="1" min="0" max="10">
-                                <span class="product_count_item number-increment"> <i class="ti-plus"></i></span>
-                            </div>
-                            <p>$5</p>
+        <form action="" enctype="multipart/form-data" method="post">
+            <div class="product_image_area">
+                <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                    <div class="product_img_slide owl-carousel">
+                        <div class="single_product_img">
+                            <img src="assets/img/gallery/gallery1.png" alt="#" class="img-fluid">
                         </div>
-                    <div class="add_to_cart">
-                        <a href="#" class="btn_3">add to cart</a>
+                        <div class="single_product_img">
+                            <img src="assets/img/gallery/gallery01.png" alt="#" class="img-fluid">
+                        </div>
+                        <div class="single_product_img">
+                            <img src="assets/img/gallery/gallery1.png" alt="#" class="img-fluid">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-8">
+                    <div class="single_product_text text-center">
+                        <h3>GESITS – G1</h3>
+                        <span>Rp 27.500.000</span><br/>
+                        <span class="bintang">* Harga ON THE ROAD Jabodetabek</span>
+                        <p>
+                        Motor listrik Gesits menggunakan tenaga listrik dengan daya motor 5KW. Sekali pengisian daya, motor listrik Gesits bisa digunakan untuk berkendara sejauh sekitar 50 kilomter untuk baterai tunggal dan 100 kilometer untuk baterai ganda. Untuk performanya sendiri bisa mencapai kecepatan maksimal kurang lebih 70 km/jam.
+                        </p><br/>
+                        <p>
+                        Untuk pengisian daya baterainya sendiri, ternyata terbilang sangat mudah dan cepat. Pengisian daya baterai motor listrik Gesits hanya membutuhkan waktu 3-4 jam saja sampai baterai terisi penuh. Pengguna motor listrik Gesits juga bisa melakukan swap baterai di sejumlah SPBU jaringan Pertamina.
+                        </p>
+                        <div class="card_area">
+                            <div class="product_count_area">
+                                <p>Quantity</p>
+                                <div class="product_count d-inline-block">
+                                    <span class="product_count_item inumber-decrement"> <i class="ti-minus"></i></span>
+                                    <input class="product_count_item input-number" name="qty" type="text" value="1" min="0" max="10">
+                                    <span class="product_count_item number-increment"> <i class="ti-plus"></i></span>
+                                </div>
+                                <!-- <p>$5</p> -->
+                            </div>
+                            <div class="pilihan-warna">
+                                <div class="text-pilih-warna">Pilih warna</div>
+                                <div class="form-group">
+                                    <select class="form-control select-warna" id="warna" name="warna">
+                                    <option value="">Pilih Opsi</option>
+                                    <option value="hitam">Hitam</option>
+                                    <option value="merah">Merah</option>
+                                    <option value="putih">Putih</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- <div class="pilihan-bayar">
+                                <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                Bayar Booking Fee
+                                </label>
+                                </div>
+                                <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                Bayar Total Harga
+                                </label>
+                                </div>
+                            </div> -->
+                        <div class="add_to_cart">
+                            <!-- <a href="#" class="btn_3" type="submit" name="submit">Checkout</a> -->
+                            <button class="btn btn-submit" type="submit" name="submit">Checkout</button>
+                        </div>
+                        </div>
                     </div>
                     </div>
                 </div>
                 </div>
             </div>
-            </div>
-        </div>
+        </form>
         <!--================End Single Product Area =================-->
         <!-- subscribe part here -->
         <section class="subscribe_part section_padding">

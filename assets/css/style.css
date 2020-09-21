@@ -2376,7 +2376,7 @@ input:focus {
 
 .slider-height2 {
   background-image: url(../img/hero/about_hero.png);
-  min-height: 500px;
+  min-height: 200px;
   background-repeat: no-repeat;
   background-position: center center; }
   @media (max-width: 575px) {
@@ -8214,3 +8214,18 @@ input:focus {
       @media (max-width: 991px) {
         .breadcrumb_part .breadcrumb_iner h2 {
           font-size: 30px; } }
+
+.product_image_area .container .single_product_text .bintang {
+  color: gray; }
+
+.product_image_area .container .single_product_text .card_area .pilihan-warna {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .product_image_area .container .single_product_text .card_area .pilihan-warna .text-pilih-warna {
+    padding: 20px;
+    color: #828BB2; }
+  .product_image_area .container .single_product_text .card_area .pilihan-warna .select-warna {
+    width: 100px;
+    text-align: center; }
