@@ -4,7 +4,7 @@
     }
     .footer-pera{
         & p{
-            color:#868c98;
+            color:#fff;
             font-size: 16px;
             margin-bottom: 50px;
             line-height: 1.8;
@@ -15,7 +15,7 @@
     }
     .footer-tittle{
         & h4{
-            color: #000;
+            color: #fff;
             font-size: 20px;
             margin-bottom: 29px;
             font-weight: 500;
@@ -24,10 +24,10 @@
         }
         & ul{
             & li{
-                color: #012f5f;
+                color: #fff;
                 margin-bottom: 15px;
                 & a{
-                    color: #868c98;
+                    color: #3F3F3F;
                     font-weight: 300;
                     &:hover{
                         color:$theme-color;
@@ -38,6 +38,10 @@
             }
         }
     }
+}
+
+.footer-area{
+    background-color: #000;
 }
 
 //copy Right 
