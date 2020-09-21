@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // footer custom//
 .footer-area{
     .container{
@@ -9,6 +10,35 @@
                         
                     }
 
+=======
+.product_image_area {
+    .container {
+        .single_product_text {
+            .bintang {
+                color: gray;
+            }
+        }
+    }
+}
+
+.product_image_area {
+    .container {
+        .single_product_text {
+            .card_area {
+                .pilihan-warna {
+                    margin: 20px 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .text-pilih-warna {
+                        padding: 20px;
+                        color: $prod-text-color;
+                    }
+                    .select-warna {
+                        width: 100px;
+                        text-align: center;
+                    }
+>>>>>>> c54fc43b4179ef47f262ac72038f99ef98073e16
                 }
             }
         }
