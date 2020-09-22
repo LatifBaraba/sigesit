@@ -394,7 +394,7 @@
                     </div> -->
                     <button class="btn btn-submit" type="submit" name="submit">Submit</button>
 
-                    <a type="button" href="https://api.whatsapp.com/send?phone=+628562235309" target="_blank" class="btn" style="background-color: #1DBEA5; margin-left: 20px;">
+                    <a type="button" href="https://api.whatsapp.com/send?phone=" target="_blank" class="btn" style="background-color: #1DBEA5; margin-left: 20px;">
                     Pesan Melalui Whatsapp
                     </a>
 
