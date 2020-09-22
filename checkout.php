@@ -48,7 +48,7 @@
                                     // TCP port to connect to
         //Recipients
         $mail->setFrom('info@gesitspradana.id', 'Admin');
-        $mail->addAddress('latifbaraba88@gmail.com');               // Name is optional
+        $mail->addAddress('info@gesitspradana.id');               // Name is optional
         //$mail->addReplyTo('latifbaraba88@gmail.com', 'Information');
         // $mail->addCC('cc@example.com');
         // $mail->addBCC('bcc@example.com');
