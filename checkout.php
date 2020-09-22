@@ -179,37 +179,36 @@
                 <div class="menu-wrapper">
                     <!-- Logo -->
                     <div class="logo">
-                        <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                        <a href="index.html"><img src="assets/img/Logo-dark-gesits.png" alt="" style="max-width: 140px;"></a>
                     </div>
                     <!-- Main-menu -->
                     <div class="main-menu d-none d-lg-block">
                         <nav>                                                
                             <ul id="navigation">  
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="shop.html">shop</a></li>
-                                <li><a href="about.html">about</a></li>
-                                <li class="hot"><a href="#">Latest</a>
+                                <li><a href="#">PRODUK</a></li>
+                                <li><a href="contact.html">LOKASI KAMI</a></li>
+                                <li><a href="about.html">TENTANG KAMI</a>
                                     <ul class="submenu">
-                                        <li><a href="shop.html"> Product list</a></li>
-                                        <li><a href="product_details.html"> Product Details</a></li>
+                                        <li><a href="#"> Profil Perusahaan</a></li>
+                                        <li><a href="#"> Hubungi Kami</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="blog.html">Blog</a>
+                               
+                                <li><a href="#">MEDIA CENTER</a>
                                     <ul class="submenu">
-                                        <li><a href="blog.html">Blog</a></li>
-                                        <li><a href="blog-details.html">Blog Details</a></li>
+                                        <li><a href="#">Berita</a></li>
+                                        <li><a href="#">Blog Details</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Pages</a>
-                                    <ul class="submenu">
+                                <li><a href="#">PESAN SEKARANG</a>
+                                    <!-- <ul class="submenu">
                                         <li><a href="login.html">Login</a></li>
                                         <li><a href="cart.html">Cart</a></li>
                                         <li><a href="elements.html">Element</a></li>
                                         <li><a href="confirmation.html">Confirmation</a></li>
                                         <li><a href="checkout.html">Product Checkout</a></li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
-                                <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -221,8 +220,7 @@
                                     <span class="flaticon-search"></span>
                                 </div>
                             </li>
-                            <li> <a href="login.html"><span class="flaticon-user"></span></a></li>
-                            <li><a href="cart.html"><span class="flaticon-shopping-cart"></span></a> </li>
+                           
                         </ul>
                     </div>
                 </div>
@@ -234,7 +232,7 @@
         </div>
     </div>
     <!-- Header End -->
-  </header>
+</header>
     <main>
             <?php if(isset($_SESSION["pemesananSukses"]) == 1) : ?>
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -472,90 +470,128 @@
         <!--================End Checkout Area =================-->
     </main>
     <footer>
-        <!-- Footer Start-->
-        <div class="footer-area footer-padding">
-            <div class="container">
-                <div class="row d-flex justify-content-between">
-                    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6">
-                        <div class="single-footer-caption mb-50">
-                            <div class="single-footer-caption mb-30">
-                                <!-- logo -->
-                                <div class="footer-logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
-                                </div>
-                                <div class="footer-tittle">
-                                    <div class="footer-pera">
-                                        <p>Asorem ipsum adipolor sdit amet, consectetur adipisicing elitcf sed do eiusmod tem.</p>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-3 col-md-3 col-sm-5">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Quick Links</h4>
-                                <ul>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#"> Offers & Discounts</a></li>
-                                    <li><a href="#"> Get Coupon</a></li>
-                                    <li><a href="#">  Contact Us</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-7">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>New Products</h4>
-                                <ul>
-                                    <li><a href="#">Woman Cloth</a></li>
-                                    <li><a href="#">Fashion Accessories</a></li>
-                                    <li><a href="#"> Man Accessories</a></li>
-                                    <li><a href="#"> Rubber made Toys</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-7">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Support</h4>
-                                <ul>
-                                    <li><a href="#">Frequently Asked Questions</a></li>
-                                    <li><a href="#">Terms & Conditions</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Report a Payment Issue</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Footer bottom -->
-                <div class="row align-items-center">
-                    <div class="col-xl-7 col-lg-8 col-md-7">
-                        <div class="footer-copy-right">
-                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>                   
-                        </div>
-                    </div>
-                    <div class="col-xl-5 col-lg-4 col-md-5">
-                        <div class="footer-copy-right f-right">
-                            <!-- social -->
-                            <div class="footer-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-behance"></i></a>
-                                <a href="#"><i class="fas fa-globe"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer End-->
-    </footer>
+      <!-- Footer Start-->
+      <div class="footer-area footer-padding">
+          <div class="container">
+              <div class="row d-flex justify-content-between">
+                  <div class="col-xl-1 col-lg-1 col-md-5 col-sm-6">
+                      <div class="single-footer-caption mb-50">
+                          <div class="single-footer-caption mb-30">
+                              <!-- logo -->
+                              <div class="footer-logo" style="border: 1px solid white; border-radius: 5%; background-color: ivory; width: auto%; text-align: center;">
+                                  <a href="index.html"><img src="assets/img/Logo-dark-gesits.png" alt="" width="50"></a>
+                              </div>
+                              <div class="footer-tittle">
+                                  <div class="footer-pera">       
+                              </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-5">
+                      <div class="single-footer-caption mb-50">
+                          <div class="footer-tittle">
+                              <h4>BERITA TERBARU</h4>
+                              <ul>
+                                  <li> 
+                                      <div class="main-li-post">
+                                          <div class="img-post" style="padding: 0 10px;">
+                                              <a class="recent-post-thumbnail" href="#">
+                                                  <img class="recent-img-thumbnail" src="assets/img/The Future.png" alt="" width="75" height="60"></a>
+                                          </div>
+                                              <div class="recent-post-info">
+                                                  <div class="post-label">
+                                                      <h5 class="recent-title" style="color: white;font-size: 10pt;">Pemprov Babel – PT Wika kembangkan kendaraan listrik di SMK</h5>
+                                                  </div>
+                                              </div>
+                                      </div>
+                                  </li>
+                                  <li>
+                                      <div class="main-li-post">
+                                          <div class="img-post" style="padding: 0 10px;">
+                                              <a class="recent-post-thumbnail" href="#">
+                                                  <img class="recent-img-thumbnail" src="assets/img/The Future.png" alt="" width="75" height="60"></a>
+                                          </div>
+                                              <div class="recent-post-info">
+                                                  <div class="post-label">
+                                                      <h5 class="recent-title" style="color: white;font-size: 10pt;">Pemprov Babel – PT Wika kembangkan kendaraan listrik di SMK</h5>
+                                                  </div>
+                                              </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-2 col-lg-2 col-md-4 col-sm-7">
+                      <div class="single-footer-caption mb-50">
+                          <div class="footer-tittle">
+                              <h4>MAIN MENU</h4>
+                              <ul>
+                                  <li><a href="#">Motor listrik</a></li>
+                                  <li><a href="#">Lokasi kami</a></li>
+                                  <li><a href="about.html"> Tentang Kami</a></li>
+                                  <li><a href="#"> Media Center</a></li>
+                                  <li><a href="#"> Test Drive</a></li>
+                                  <li><a href="#"> Pesan Sekarang</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-2 col-lg-2 col-md-5 col-sm-7">
+                      <div class="single-footer-caption mb-50">
+                          <div class="footer-tittle">
+                              <h4>MEDIA CENTER</h4>
+                              <ul>
+                                  <li><a href="#">Berita</a></li>
+                                  <li><a href="#">Event</a></li>
+                                  <li><a href="#">FAQs</a></li>
+                                  <li><a href="#">Press Release</a></li>
+                                  <li><a href="#"> Hubungi kami</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xl-2 col-lg-2 col-md-5 col-sm-7">
+                      <div class="single-footer-caption mb-50">
+                          <div class="footer-tittle">
+                              <h4>MEDIA CENTER</h4>
+                              <ul>
+                                  <li><a href="#">Berita</a></li>
+                                  <li><a href="#">Event</a></li>
+                                  <li><a href="#">FAQs</a></li>
+                                  <li><a href="#">Press Release</a></li>
+                                  <li><a href="#"> Hubungi kami</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- Footer bottom -->
+              <div class="row align-items-center">
+                  <div class="col-xl-7 col-lg-8 col-md-7">
+                      <div class="footer-copy-right">
+                          <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+ &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <a href="#" target="_blank" style="color: black;">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>                  
+                      </div>
+                  </div>
+                  <div class="col-xl-5 col-lg-4 col-md-5">
+                      <div class="footer-copy-right f-right">
+                          <!-- social -->
+                          <div class="footer-social">
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                              <a href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a>
+                              <a href="#"><i class="fab fa-behance"></i></a>
+                              <a href="#"><i class="fas fa-globe"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Footer End-->
+  </footer>
     <!--? Search model Begin -->
     <div class="search-model-box">
         <div class="h-100 d-flex align-items-center justify-content-center">

@@ -3238,6 +3238,39 @@ input:focus {
     .gallery-wrapper .gallery-area .gallery-items {
       width: 50%; } }
 
+<<<<<<< HEAD
+=======
+.footer-area .footer-logo {
+  margin-bottom: 40px; }
+
+.footer-area .footer-pera p {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 50px;
+  line-height: 1.8; }
+
+.footer-area .footer-pera.footer-pera2 p {
+  padding: 0; }
+
+.footer-area .footer-tittle h4 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 29px;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif; }
+
+.footer-area .footer-tittle ul li {
+  color: #fff;
+  margin-bottom: 15px; }
+  .footer-area .footer-tittle ul li a {
+    color: #787878;
+    font-weight: 300; }
+    .footer-area .footer-tittle ul li a:hover {
+      color: white;
+      padding-left: 5px; }
+
+>>>>>>> 68e56afdff676c9ecb35787822322cf706762be0
 .footer-area {
   background-color: black; }
   .footer-area .footer-logo {
@@ -8213,8 +8246,8 @@ input:focus {
         .breadcrumb_part .breadcrumb_iner h2 {
           font-size: 30px; } }
 
-.product_image_area .container .single_product_text .bintang {
-  color: gray; }
+.footer-area .container .row .single-footer-caption .footer-tittle .main-li-post {
+  display: flex; }
 
 .product_image_area .container .single_product_text .card_area .pilihan-warna {
   margin: 20px 0;
@@ -8227,3 +8260,20 @@ input:focus {
   .product_image_area .container .single_product_text .card_area .pilihan-warna .select-warna {
     width: 100px;
     text-align: center; }
+
+.main-faq {
+  padding: 20px; }
+
+.main-faq .row .card .card-header {
+  padding: 0; }
+  .main-faq .row .card .card-header h5 .btn-link {
+    white-space: normal;
+    word-wrap: break-word;
+    text-align: left;
+    font-size: 10px;
+    width: 100%;
+    text-decoration: none; }
+    .main-faq .row .card .card-header h5 .btn-link p {
+      color: white; }
+  .main-faq .row .card .card-header h5 .btn {
+    background-color: grey; }
