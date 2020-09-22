@@ -44,17 +44,17 @@
                     <div class="menu-wrapper">
                         <!-- Logo -->
                         <div class="logo">
-                            <a href="index.html"><img src="assets/img/Logo-dark-gesits.png" alt="" style="max-width: 140px;"></a>
+                            <a href="index.php"><img src="assets/img/Logo-dark-gesits.png" alt="" style="max-width: 140px;"></a>
                         </div>
                         <!-- Main-menu -->
                         <div class="main-menu d-none d-lg-block">
                             <nav>                                                
                                 <ul id="navigation">  
                                     <li><a href="#">PRODUK</a></li>
-                                    <li><a href="contact.html">LOKASI KAMI</a></li>
+                                    <li><a href="contact.php">LOKASI KAMI</a></li>
                                     <li><a href="">TENTANG KAMI</a>
                                         <ul class="submenu">
-                                            <li><a href="about.html"> Profil Perusahaan</a></li>
+                                            <li><a href="about.php"> Profil Perusahaan</a></li>
                                             <li><a href="#"> Hubungi Kami</a></li>
                                         </ul>
                                     </li>
@@ -106,7 +106,7 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="hero-cap text-center">
-                                <h2>FAQ</h2>
+                                <h2>About Us</h2>
                             </div>
                         </div>
                     </div>
@@ -114,170 +114,36 @@
             </div>
         </div>
         <!-- Hero Area End-->
-        <div class="main-faq">
-            <div class="row">
-                <div class="col-md-6">
-                    <div id="accordion">
-                        <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h5 class="mb-0">
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                <p>Berapa lama waktu pengisian daya 1 unit baterai penuh?</p> 
-                            </button>
-                            </h5>
+        <!-- About Details Start -->
+        <div class="about-details section-padding30">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-xl-1 col-lg-8">
+                        <div class="about-details-cap mb-50">
+                            <h4>PT. Wika Industri Manufaktur</h4>
+                            <p>PT WIKA Industri Manufaktur merupakan anak perusahaan patungan (Joint Venture) antara PT Wijaya Karya Industri & Konstruksi (WIKON) dan PT GESITS Technologies Indo (GTI) yang bergerak dalam bidang industri otomotif dan perakitan otomotif.</p>
                         </div>
-                    
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                            <div class="card-body">
-                                Untuk pengisian daya 1 unit baterai penuh membutuhkan waktu 3 sampai 4 jam dari 0 % sd penuh.
-                            </div>
+                        <div class="about-details-cap mb-50">
+                            <h4>VISI & MISI</h4>
+                            <p>“Menjadi perusahaan terkemuka di bidang industri manufaktur otomotif di tingkat Nasional dengan produk unggulan kendaran listrik (Electric Vehicle)”</p>
+                            <ul class="ul-visimisi">
+                                <li style="color: #464d65;">
+                                    <i class="fas fa-angle-right"></i> Mempercepat transisi kepada penggunaan energi yang berkelanjutan (Sustainable Energy).
+                                </li>
+                                <li style="color: #464d65;">
+                                    <i class="fas fa-angle-right"></i> Meningkatkan Tingkat Kandungan Dalam Negeri (local content) dengan pembinaan pemasok lokal secara konsisten.
+                                </li>
+                                <li style="color: #464d65;">
+                                    <i class="fas fa-angle-right"></i> Membangun masyarakat untuk menggunakan kendaraan perkotaan yang cerdas (Urban Intelligent Vehicle) dan penggerak daya yang sangat efisien (Ultra-Efficient Powertrain)
+                                </li>
+                            </ul>
                         </div>
-                        </div>
-                        <div class="card">
-                        <div class="card-header" id="headingTwo">
-                            <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                               <p>Berapa Km jarak tempuh untuk pengisian daya 1 unit baterai penuh?</p> 
-                            </h5>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                            <div class="card-body">
-                                Jarak maksimal yang mampu ditempuh kendaraan dalam satu kali pengisian daya baterai penuh kurang lebih 50 Km.
-                                Hasil jarak tempuh akan bervariasi pada setiap pengendara tergantung dari kecepatan, akselerasi, banyaknya penghentian kendaraan, temperatur udara, perubahan elevasi jalan (turunan/tanjakan), tekanan ban dan beban yang diangkut oleh kendaraan
-                            </div>
-                        </div>
-                        </div>
-                        <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                <p>
-                                    Berapa minimal kapasitas daya listrik terpasang di rumah untuk memenuhi pengisian daya baterai?
-                                </p>
-                            </button>
-                            </h5>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                            <div class="card-body">
-                                Kapasitas daya listrik terpasang dirumah Minimal 900 watt.
-                            </div>
-                        </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="card-header" id="headingFour">
-                                <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                   <p>Komponen dari motor GESITS apa saja yang diberikan garansi?</p> 
-                                </button>
-                                </h5>
-                            </div>
-                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                                <div class="card-body">
-                                    Komponen Motor GESITS yang diberikan garansi seperti BLDC, Display Motor, Controller garansi selama 1 Tahun dan Baterai selama 2 Tahun.
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="card-header" id="headingFive">
-                                <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                   <p>Untuk perawatan motor GESITS, kapan dan apa saja komponen yang harus dilakukan service?</p> 
-                                </button>
-                                </h5>
-                            </div>
-                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-                                <div class="card-body">
-                                    Untuk 6 bulan pertama atau setelah 1.000 Km maka motor GESITS perlu dilakukan service berkala kemudian setiap 6 bulan sekali atau setiap kelipatan 6.000 Km perlu dilakukan service berkala. Untuk komponen yang memerlukan perawatan seperti Cairan Rem, Rem Depan, Rem Belakang, Ban, Sabuk Transisi, Bearing Roda, Bearing Kemudi, Pengencangan Baut Rangka, Garpu Roda Depan, Motor Penggerak
-                                </div>
-                            </div>
-                            </div>
+                    </div>
                 </div>
-
-                <div class="col-md-6">
-                    <div id="accordion">
-                        <div class="card">
-                        <div class="card-header" id="headingOneDup">
-                            <h5 class="mb-0">
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOneDup" aria-expanded="true" aria-controls="collapseOneDup">
-                                <p>Apakah Motor GESITS akan konslet ketika terkena hujan saat dikendarai?</p> 
-                            </button>
-                            </h5>
-                        </div>
-                    
-                        <div id="collapseOneDup" class="collapse show" aria-labelledby="headingOneDup" data-parent="#accordionDup">
-                            <div class="card-body">
-                                Motor GESITS tidak akan konslet karena Mesin DC sudah dilengkapi dengan teknologi IP 55 yang tahan debu dan semprotan cairan normal.
-                            </div>
-                        </div>
-                        </div>
-                        <div class="card">
-                        <div class="card-header" id="headingTwoDup">
-                            <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwoDup" aria-expanded="false" aria-controls="collapseTwoDup">
-                               <p>Kelengkapan Motor?</p> 
-                            </h5>
-                        </div>
-                        <div id="collapseTwoDup" class="collapse" aria-labelledby="headingTwoDup" data-parent="#accordionDup">
-                            <div class="card-body">
-                                Helm, Buku Garansi, Buku Manual, 1 unit Baterai dan 1 Unit Personal Charger.
-                            </div>
-                        </div>
-                        </div>
-                        <div class="card">
-                        <div class="card-header" id="headingThreeDup">
-                            <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThreeDup" aria-expanded="false" aria-controls="collapseThreeDup">
-                                <p>
-                                    Bagaimana sistem pengisian daya di SPLU ?
-                                </p>
-                            </button>
-                            </h5>
-                        </div>
-                        <div id="collapseThreeDup" class="collapse" aria-labelledby="headingThreeDup" data-parent="#accordionDup">
-                            <div class="card-body">
-                                Sistem Pengisian daya yang ada di SPLU PLN memakai voucher token yang dapat dibeli melalui PLN.
-                            </div>
-                        </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="card-header" id="headingFourDup">
-                                <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFourDup" aria-expanded="false" aria-controls="collapseFourDup">
-                                   <p>Bagaimana after sales service yang dimiliki GESITS ?</p> 
-                                </button>
-                                </h5>
-                            </div>
-                            <div id="collapseFourDup" class="collapse" aria-labelledby="headingFourDup" data-parent="#accordionDup">
-                                <div class="card-body">
-                                    After sales service yang dimiliki GESITS bekerja sama dengan Mr. Montir dengan metode Home Service/Service On The Spot dan akan diperluas dengan Oil Mart Pertamina.
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="card-header" id="headingFiveDup">
-                                <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFiveDup" aria-expanded="false" aria-controls="collapseFiveDup">
-                                   <p>Berapa nilai BBNKB (Biaya Balik Nama Kendaraan Bermotor) yang dikenakan untuk kendaraan motor berbasis listrik?</p> 
-                                </button>
-                                </h5>
-                            </div>
-                            <div id="collapseFiveDup" class="collapse" aria-labelledby="headingFiveDup" data-parent="#accordionDup">
-                                <div class="card-body">
-                                    BBNKB khusus untuk kendaraan motor berbasis listrik tarifnya sebesar 0 – 3,75 %.
-                                </div>
-                            </div>
-                            </div>
-                </div>
-                </div>
-                
             </div>
         </div>
+        <!-- About Details End -->
+     
     </main>
     <footer>
         <!-- Footer Start-->
@@ -288,8 +154,8 @@
                         <div class="single-footer-caption mb-50">
                             <div class="single-footer-caption mb-30">
                                 <!-- logo -->
-                                <div class="footer-logo" style="border: 1px solid white; border-radius: 5%; background-color: ivory; width: auto%; text-align: center;">
-                                    <a href="index.html"><img src="assets/img/Logo-dark-gesits.png" alt="" width="50"></a>
+                                <div class="footer-logo" style="border: 1px solid white; border-radius: 5%; background-color: ivory; width: auto; text-align: center;">
+                                    <a href="index.php"><img src="assets/img/Logo-dark-gesits.png" alt="" width="50"></a>
                                 </div>
                                 <div class="footer-tittle">
                                     <div class="footer-pera">       
@@ -340,7 +206,7 @@
                                 <ul>
                                     <li><a href="#">Motor listrik</a></li>
                                     <li><a href="#">Lokasi kami</a></li>
-                                    <li><a href="about.html"> Tentang Kami</a></li>
+                                    <li><a href="about.php"> Tentang Kami</a></li>
                                     <li><a href="#"> Media Center</a></li>
                                     <li><a href="#"> Test Drive</a></li>
                                     <li><a href="#"> Pesan Sekarang</a></li>

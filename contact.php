@@ -44,17 +44,17 @@
                     <div class="menu-wrapper">
                         <!-- Logo -->
                         <div class="logo">
-                            <a href="index.html"><img src="assets/img/Logo-dark-gesits.png" alt="" style="max-width: 140px;"></a>
+                            <a href="index.php"><img src="assets/img/Logo-dark-gesits.png" alt="" style="max-width: 140px;"></a>
                         </div>
                         <!-- Main-menu -->
                         <div class="main-menu d-none d-lg-block">
                             <nav>                                                
                                 <ul id="navigation">  
                                     <li><a href="#">PRODUK</a></li>
-                                    <li><a href="contact.html">LOKASI KAMI</a></li>
+                                    <li><a href="contact.php">LOKASI KAMI</a></li>
                                     <li><a href="">TENTANG KAMI</a>
                                         <ul class="submenu">
-                                            <li><a href="about.html"> Profil Perusahaan</a></li>
+                                            <li><a href="about.php"> Profil Perusahaan</a></li>
                                             <li><a href="#"> Hubungi Kami</a></li>
                                         </ul>
                                     </li>
@@ -229,8 +229,8 @@
                         <div class="single-footer-caption mb-50">
                             <div class="single-footer-caption mb-30">
                                 <!-- logo -->
-                                <div class="footer-logo" style="border: 1px solid white; border-radius: 5%; background-color: ivory; width: auto%; text-align: center;">
-                                    <a href="index.html"><img src="assets/img/Logo-dark-gesits.png" alt="" width="50"></a>
+                                <div class="footer-logo" style="border: 1px solid white; border-radius: 5%; background-color: ivory; width: auto; text-align: center;">
+                                    <a href="index.php"><img src="assets/img/Logo-dark-gesits.png" alt="" width="50"></a>
                                 </div>
                                 <div class="footer-tittle">
                                     <div class="footer-pera">       
@@ -281,7 +281,7 @@
                                 <ul>
                                     <li><a href="#">Motor listrik</a></li>
                                     <li><a href="#">Lokasi kami</a></li>
-                                    <li><a href="about.html"> Tentang Kami</a></li>
+                                    <li><a href="about.php"> Tentang Kami</a></li>
                                     <li><a href="#"> Media Center</a></li>
                                     <li><a href="#"> Test Drive</a></li>
                                     <li><a href="#"> Pesan Sekarang</a></li>

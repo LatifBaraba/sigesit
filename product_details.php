@@ -4,6 +4,7 @@
         if($_POST['warna'] != null) {
 
             // var_dump("1",$_POST['warna'], $_POST['qty']); exit;
+            session_start();
             
             $_SESSION['order'] = [
                 'warna' => $_POST['warna'],   
@@ -11,7 +12,7 @@
             ];
 
             header("Location: checkout.php");
-            exit;
+            // exit;
         } else {
             
             $_SESSION['pilihWarna'] = 1 ;

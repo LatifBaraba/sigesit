@@ -1,4 +1,5 @@
 <?php
+  session_start();
   // Import PHPMailer classes into the global namespace
   // These must be at the top of your script, not inside a function
   use PHPMailer\PHPMailer\PHPMailer;
@@ -101,6 +102,17 @@
                         <td style="padding: 5px; width: 40%;">Kota</td>
                         <td style="padding: 5px; width: 60%; text-align: right;">'. $_SESSION['checkout']['city'].'</td>
                     </tr>
+                    <tr style="background-color: #2AB0B0; text-align: center;">
+                        <td colspan="3" style="padding: 5px; width: 100%;">Deskripsi Barang</td>
+                    </tr>
+                    <tr style="color: black;">
+                        <td style="padding: 5px; width: 40%;">Warna</td>
+                        <td style="padding: 5px; width: 60%; text-align: right;">'. $_SESSION['order']['warna'].'</td>
+                    </tr>
+                    <tr style="color: black;">
+                        <td style="padding: 5px; width: 40%;">Quantity</td>
+                        <td style="padding: 5px; width: 60%; text-align: right;">'. $_SESSION['order']['qty'].'</td>
+                    </tr>
                 </tbody>
             </table>
         </body>
@@ -112,8 +124,6 @@
 
             // $_SESSION['emailberhasil']=1;
             // echo 'Message has been sent';
-            $_SESSION['pemesananSukses'] = 1 ;
-
     } catch (Exception $e) {
         // echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
             // $_SESSION['emailgagal']=1;
@@ -136,6 +146,9 @@
 
       mailSend();
 
+      $_SESSION['pemesananSukses'] = 1 ;
+
+      header( "refresh:7; url=index.php" );
     } else {
 
       $_SESSION['pemesananDataLengkapi'] = 1 ;
@@ -179,15 +192,15 @@
                 <div class="menu-wrapper">
                     <!-- Logo -->
                     <div class="logo">
-                        <a href="index.html"><img src="assets/img/Logo-dark-gesits.png" alt="" style="max-width: 140px;"></a>
+                        <a href="index.php"><img src="assets/img/Logo-dark-gesits.png" alt="" style="max-width: 140px;"></a>
                     </div>
                     <!-- Main-menu -->
                     <div class="main-menu d-none d-lg-block">
                         <nav>                                                
                             <ul id="navigation">  
                                 <li><a href="#">PRODUK</a></li>
-                                <li><a href="contact.html">LOKASI KAMI</a></li>
-                                <li><a href="about.html">TENTANG KAMI</a>
+                                <li><a href="contact.php">LOKASI KAMI</a></li>
+                                <li><a href="about.php">TENTANG KAMI</a>
                                     <ul class="submenu">
                                         <li><a href="#"> Profil Perusahaan</a></li>
                                         <li><a href="#"> Hubungi Kami</a></li>
@@ -478,8 +491,8 @@
                       <div class="single-footer-caption mb-50">
                           <div class="single-footer-caption mb-30">
                               <!-- logo -->
-                              <div class="footer-logo" style="border: 1px solid white; border-radius: 5%; background-color: ivory; width: auto%; text-align: center;">
-                                  <a href="index.html"><img src="assets/img/Logo-dark-gesits.png" alt="" width="50"></a>
+                              <div class="footer-logo" style="border: 1px solid white; border-radius: 5%; background-color: ivory; width: auto; text-align: center;">
+                                  <a href="index.php"><img src="assets/img/Logo-dark-gesits.png" alt="" width="50"></a>
                               </div>
                               <div class="footer-tittle">
                                   <div class="footer-pera">       
@@ -530,7 +543,7 @@
                               <ul>
                                   <li><a href="#">Motor listrik</a></li>
                                   <li><a href="#">Lokasi kami</a></li>
-                                  <li><a href="about.html"> Tentang Kami</a></li>
+                                  <li><a href="about.php"> Tentang Kami</a></li>
                                   <li><a href="#"> Media Center</a></li>
                                   <li><a href="#"> Test Drive</a></li>
                                   <li><a href="#"> Pesan Sekarang</a></li>

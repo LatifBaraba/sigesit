@@ -372,7 +372,7 @@
                         <div class="single-footer-caption mb-50">
                             <div class="single-footer-caption mb-30">
                                 <!-- logo -->
-                                <div class="footer-logo" style="border: 1px solid white; border-radius: 5%; background-color: ivory; width: auto%; text-align: center;">
+                                <div class="footer-logo" style="border: 1px solid white; border-radius: 5%; background-color: ivory; width: auto; text-align: center;">
                                     <a href="index.html"><img src="assets/img/Logo-dark-gesits.png" alt="" width="50"></a>
                                 </div>
                                 <div class="footer-tittle">
