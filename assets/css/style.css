@@ -8232,3 +8232,20 @@ input:focus {
   .product_image_area .container .single_product_text .card_area .pilihan-warna .select-warna {
     width: 100px;
     text-align: center; }
+
+.main-faq {
+  padding: 20px; }
+
+.main-faq .row .card .card-header {
+  padding: 0; }
+  .main-faq .row .card .card-header h5 .btn-link {
+    white-space: normal;
+    word-wrap: break-word;
+    text-align: left;
+    font-size: 10px;
+    width: 100%;
+    text-decoration: none; }
+    .main-faq .row .card .card-header h5 .btn-link p {
+      color: white; }
+  .main-faq .row .card .card-header h5 .btn {
+    background-color: grey; }
