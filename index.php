@@ -44,17 +44,17 @@
                     <div class="menu-wrapper">
                         <!-- Logo -->
                         <div class="logo">
-                            <a href="index.html"><img src="assets/img/Logo-dark-gesits.png" alt="" style="max-width: 140px;"></a>
+                            <a href="index.php"><img src="assets/img/Logo-dark-gesits.png" alt="" style="max-width: 140px;"></a>
                         </div>
                         <!-- Main-menu -->
                         <div class="main-menu d-none d-lg-block">
                             <nav>                                                
                                 <ul id="navigation">  
-                                    <li><a href="#">PRODUK</a></li>
-                                    <li><a href="contact.html">LOKASI KAMI</a></li>
+                                    <li><a href="product_details.php">PRODUK</a></li>
+                                    <li><a href="contact.php">LOKASI KAMI</a></li>
                                     <li><a href="">TENTANG KAMI</a>
                                         <ul class="submenu">
-                                            <li><a href="about.html"> Profil Perusahaan</a></li>
+                                            <li><a href="about.php"> Profil Perusahaan</a></li>
                                             <li><a href="#"> Hubungi Kami</a></li>
                                         </ul>
                                     </li>
@@ -63,7 +63,7 @@
                                         <ul class="submenu">
                                             <li><a href="#">Berita</a></li>
                                             <li><a href="#">Events</a></li>
-                                            <li><a href="faq.html">Faq</a></li>
+                                            <li><a href="faq.php">Faq</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="product_details.php">PESAN SEKARANG</a>
@@ -174,7 +174,7 @@
                             </div>
                             <div class="product-caption">
                                 <h3>
-                                    <a href="contact.html">Spesifikasi</a>
+                                    <a href="contact.php">Spesifikasi</a>
                                 </h3>
                                 <span> Pelajari Teknologi Gesits </span>
                             </div>
@@ -187,7 +187,7 @@
                             </div>
                             <div class="product-caption">
                                 <h3>
-                                    <a href="contact.html">Daftar Test Drive</a>
+                                    <a href="#">Daftar Test Drive</a>
                                 </h3>
                                 <span> Uji coba motor listrik gesits. </span>
                             </div>
@@ -373,7 +373,7 @@
                             <div class="single-footer-caption mb-30">
                                 <!-- logo -->
                                 <div class="footer-logo" style="border: 1px solid white; border-radius: 5%; background-color: ivory; width: auto; text-align: center;">
-                                    <a href="index.html"><img src="assets/img/Logo-dark-gesits.png" alt="" width="50"></a>
+                                    <a href="index.php"><img src="assets/img/Logo-dark-gesits.png" alt="" width="50"></a>
                                 </div>
                                 <div class="footer-tittle">
                                     <div class="footer-pera">       

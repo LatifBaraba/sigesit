@@ -50,7 +50,7 @@
                         <div class="main-menu d-none d-lg-block">
                             <nav>                                                
                                 <ul id="navigation">  
-                                    <li><a href="#">PRODUK</a></li>
+                                    <li><a href="product_details.php">PRODUK</a></li>
                                     <li><a href="contact.php">LOKASI KAMI</a></li>
                                     <li><a href="">TENTANG KAMI</a>
                                         <ul class="submenu">
