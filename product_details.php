@@ -59,7 +59,7 @@
                     <div class="menu-wrapper">
                         <!-- Logo -->
                         <div class="logo">
-                            <a href="index.html"><img src="assets/img/Logo-dark-gesits.png" alt="" style="max-width: 140px;"></a>
+                            <a href="index.php"><img src="assets/img/Logo-dark-gesits.png" alt="" style="max-width: 140px;"></a>
                         </div>
                         <!-- Main-menu -->
                         <div class="main-menu d-none d-lg-block">
