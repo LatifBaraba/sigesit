@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Pemesanan Gesits</title>
+        </head>
+        <body>
+            <table style="width: auto; font-family: Arial, Helvetica, sans-serif; border-collapse: separate; border: 2px solid gray; margin: auto; color: white">
+                <thead>
+                    <td colspan="3" style="padding: 20px 10px; text-align: center; font-size: 20px; background-color: #1397BF;">Pemesanan Gesits</td>
+                </thead>
+                <tbody style="border: 2px solid black;">
+                    <tr style="background-color: #2AB0B0; text-align: center;">
+                        <td style="padding: 5px; width: 40%;">Index</td>
+                        <td style="padding: 5px; width: 60%;">Keterangan</td>
+                    </tr>
+                    <tr style="color: black;">
+                        <td style="padding: 5px; width: 40%;">Nama Depan</td>
+                        <td style="padding: 5px; width: 60%;">'. $_SESSION['checkout']['name'].'</td>
+                    </tr>
+                    <tr style="color: black;">
+                        <td style="padding: 5px; width: 40%;">Nama Belakang</td>
+                        <td style="padding: 5px; width: 60%;">'. $_SESSION['checkout']['lastname'].'</td>
+                    </tr>
+                    <tr style="color: black;">
+                        <td style="padding: 5px; width: 40%;">Nomor Telepon</td>
+                        <td style="padding: 5px; width: 60%;">'. $_SESSION['checkout']['number'].'</td>
+                    </tr>
+                    <tr style="color: black;">
+                        <td style="padding: 5px; width: 40%;">Email</td>
+                        <td style="padding: 5px; width: 60%;">'. $_SESSION['checkout']['email'].'</td>
+                    </tr>
+                    <tr style="color: black;">
+                        <td style="padding: 5px; width: 40%;">Alamat</td>
+                        <td style="padding: 5px; width: 60%;">'. $_SESSION['checkout']['add1'].'</td>
+                    </tr>
+                    <tr style="color: black;">
+                        <td style="padding: 5px; width: 40%;">Kota</td>
+                        <td style="padding: 5px; width: 60%;">'. $_SESSION['checkout']['city'].'</td>
+                    </tr>
+                </tbody>
+            </table>
+        </body>
+        </html>

@@ -1,3 +1,149 @@
+<?php
+  // Import PHPMailer classes into the global namespace
+  // These must be at the top of your script, not inside a function
+  use PHPMailer\PHPMailer\PHPMailer;
+  use PHPMailer\PHPMailer\SMTP;
+  use PHPMailer\PHPMailer\Exception;
+
+  // Load Composer's autoloader
+  //require 'vendor/autoload.php';
+  // require 'PHPMailer/src/Exception.php';
+  // require 'PHPMailer/src/PHPMailer.php';
+  // require 'PHPMailer/src/SMTP.php';
+  require 'phpmailer/src/Exception.php';
+  require 'phpmailer/src/PHPMailer.php';
+  require 'phpmailer/src/SMTP.php';
+
+  function mailSend() {
+    // var_dump($_SESSION['checkout']['name']); exit;
+    //global $mail;
+    $mail = new PHPMailer(true);
+    // $email = htmlspecialchars($post["email"]);
+
+    // if (!filter_var($email, FILTER_VALIDATE_EMAIL)       
+    // ) {
+
+    //     $_SESSION['emailisinvalid']=1;
+    //     return false;
+    // }
+
+    try {
+        //Server settings
+        $mail->SMTPDebug = 0;                      // Enable verbose debug output
+        $mail->isSMTP();                                            // Send using SMTP
+        $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
+        $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+        $mail->Username   = 'pradanagesits@gmail.com';                     // SMTP username
+        $mail->Password   = 'GesitsPradana2020&*';                               // SMTP password
+        $mail->SMTPSecure = 'ssl';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
+        $mail->Port       = 465;   
+        $mail->SMTPOptions = array (
+            'ssl' => array (
+              'verify_peer' => false,
+              'verify_peer_name' => false,
+              'allow_self_signed' => true
+            )
+          );
+                                    // TCP port to connect to
+        //Recipients
+        $mail->setFrom('info@gesitspradana.id', 'Admin');
+        $mail->addAddress('latifbaraba88@gmail.com');               // Name is optional
+        //$mail->addReplyTo('latifbaraba88@gmail.com', 'Information');
+        // $mail->addCC('cc@example.com');
+        // $mail->addBCC('bcc@example.com');
+        
+        // Attachments
+        // $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
+        // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+        
+        // Content
+        $mail->isHTML(true);                                  // Set email format to HTML
+        $mail->Subject = 'Pemesanan Gesits';
+        $mail->Body    = ' 
+        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Pemesanan Gesits</title>
+        </head>
+        <body>
+            <table style="width: auto; font-family: Arial, Helvetica, sans-serif; border-collapse: separate; border: 2px solid gray; margin: auto; color: white">
+                <thead>
+                    <td colspan="3" style="padding: 20px 10px; text-align: center; font-size: 20px; background-color: #1397BF;">Pemesanan Gesits</td>
+                </thead>
+                <tbody style="border: 2px solid black;">
+                    <tr style="background-color: #2AB0B0; text-align: center;">
+                        <td style="padding: 5px; width: 40%;">Index</td>
+                        <td style="padding: 5px; width: 60%;">Keterangan</td>
+                    </tr>
+                    <tr style="color: black;">
+                        <td style="padding: 5px; width: 40%;">Nama Depan</td>
+                        <td style="padding: 5px; width: 60%; text-align: right;">'. $_SESSION['checkout']['name'].'</td>
+                    </tr>
+                    <tr style="color: black;">
+                        <td style="padding: 5px; width: 40%;">Nama Belakang</td>
+                        <td style="padding: 5px; width: 60%; text-align: right;">'. $_SESSION['checkout']['lastname'].'</td>
+                    </tr>
+                    <tr style="color: black;">
+                        <td style="padding: 5px; width: 40%;">Nomor Telepon</td>
+                        <td style="padding: 5px; width: 60%; text-align: right;">'. $_SESSION['checkout']['number'].'</td>
+                    </tr>
+                    <tr style="color: black;">
+                        <td style="padding: 5px; width: 40%;">Email</td>
+                        <td style="padding: 5px; width: 60%; text-align: right;">'. $_SESSION['checkout']['email'].'</td>
+                    </tr>
+                    <tr style="color: black;">
+                        <td style="padding: 5px; width: 40%;">Alamat</td>
+                        <td style="padding: 5px; width: 60%; text-align: right;">'. $_SESSION['checkout']['add1'].'</td>
+                    </tr>
+                    <tr style="color: black;">
+                        <td style="padding: 5px; width: 40%;">Kota</td>
+                        <td style="padding: 5px; width: 60%; text-align: right;">'. $_SESSION['checkout']['city'].'</td>
+                    </tr>
+                </tbody>
+            </table>
+        </body>
+        </html> ';
+        // $mail->Body    = ' <a href="coba.cocreative.id/gantipass.php?email='.$email.'">Click Here</a> to change ur Password ';
+       
+        //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+        $mail->send();
+
+            // $_SESSION['emailberhasil']=1;
+            // echo 'Message has been sent';
+            $_SESSION['pemesananSukses'] = 1 ;
+
+    } catch (Exception $e) {
+        // echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+            // $_SESSION['emailgagal']=1;
+    }
+  }
+ 
+  if(isset($_POST["submit"])) {
+    // var_dump($_POST['name'], $_POST['lastname']); exit;
+
+    if($_POST['name'] != null OR $_POST['lastname'] != null OR $_POST['number'] != null OR $_POST['email'] != null OR $_POST['add1'] != null OR $_POST['city'] != null) {
+      
+      $_SESSION['checkout'] = [
+        'name' => $_POST['name'],   
+        'lastname' => $_POST['lastname'],
+        'number' => $_POST['number'],
+        'email' => $_POST['email'],
+        'add1' => $_POST['add1'],
+        'city' => $_POST['city']
+      ];
+
+      mailSend();
+
+    } else {
+
+      $_SESSION['pemesananDataLengkapi'] = 1 ;
+
+    }
+    // var_dump($_SESSION['checkout']); exit;
+  }
+?>
 <!doctype html>
 <html lang="zxx">
 <head>
@@ -90,6 +236,23 @@
     <!-- Header End -->
   </header>
     <main>
+            <?php if(isset($_SESSION["pemesananSukses"]) == 1) : ?>
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <b>Pemesanan Berhasil</b> Tunggu admin kami untuk menghubungi anda, <b>Terima Kasih!</b>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            <?php endif; unset($_SESSION['pemesananSukses']); ?>
+
+            <?php if(isset($_SESSION["pemesananDataLengkapi"]) == 1) : ?>
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    Mohon lengkapi data anda, <b>Terima Kasih!</b>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            <?php endif; unset($_SESSION['pemesananDataLengkapi']); ?>
         <!-- Hero Area Start-->
         <div class="slider-area ">
             <div class="single-slider slider-height2 d-flex align-items-center">
@@ -156,44 +319,44 @@
                   <h3>Billing Details</h3>
                   <form class="row contact_form" action="#" method="post" novalidate="novalidate">
                     <div class="col-md-6 form-group p_star">
-                      <input type="text" class="form-control" id="first" name="name" />
-                      <span class="placeholder" data-placeholder="First name"></span>
+                      <input type="text" class="form-control" id="first" name="name" placeholder="Nama Depan"/>
+                      <!-- <span class="placeholder" data-placeholder="First name"></span> -->
                     </div>
                     <div class="col-md-6 form-group p_star">
-                      <input type="text" class="form-control" id="last" name="name" />
-                      <span class="placeholder" data-placeholder="Last name"></span>
+                      <input type="text" class="form-control" id="last" name="lastname" placeholder="Nama Belakang"/>
+                      <!-- <span class="placeholder" data-placeholder="Last name"></span> -->
                     </div>
-                    <div class="col-md-12 form-group">
+                    <!-- <div class="col-md-12 form-group">
                       <input type="text" class="form-control" id="company" name="company" placeholder="Company name" />
+                    </div> -->
+                    <div class="col-md-6 form-group p_star">
+                      <input type="text" class="form-control" id="number" name="number" placeholder="Nomor Hp"/>
+                      <!-- <span class="placeholder" data-placeholder="Phone number"></span> -->
                     </div>
                     <div class="col-md-6 form-group p_star">
-                      <input type="text" class="form-control" id="number" name="number" />
-                      <span class="placeholder" data-placeholder="Phone number"></span>
+                      <input type="text" class="form-control" id="email" name="email" placeholder="Email"/>
+                      <!-- <span class="placeholder" data-placeholder="Email Address"></span> -->
                     </div>
-                    <div class="col-md-6 form-group p_star">
-                      <input type="text" class="form-control" id="email" name="compemailany" />
-                      <span class="placeholder" data-placeholder="Email Address"></span>
-                    </div>
-                    <div class="col-md-12 form-group p_star">
+                    <!-- <div class="col-md-12 form-group p_star">
                       <select class="country_select">
                         <option value="1">Country</option>
                         <option value="2">Country</option>
                         <option value="4">Country</option>
                       </select>
-                    </div>
+                    </div> -->
                     <div class="col-md-12 form-group p_star">
-                      <input type="text" class="form-control" id="add1" name="add1" />
-                      <span class="placeholder" data-placeholder="Address line 01"></span>
+                      <input type="text" class="form-control" id="add1" name="add1" placeholder="Alamat"/>
+                      <!-- <span class="placeholder" data-placeholder="Address line 01"></span> -->
                     </div>
-                    <div class="col-md-12 form-group p_star">
+                    <!-- <div class="col-md-12 form-group p_star">
                       <input type="text" class="form-control" id="add2" name="add2" />
                       <span class="placeholder" data-placeholder="Address line 02"></span>
-                    </div>
+                    </div> -->
                     <div class="col-md-12 form-group p_star">
-                      <input type="text" class="form-control" id="city" name="city" />
-                      <span class="placeholder" data-placeholder="Town/City"></span>
+                      <input type="text" class="form-control" id="city" name="city" placeholder="Kota"/>
+                      <!-- <span class="placeholder" data-placeholder="Town/City"></span> -->
                     </div>
-                    <div class="col-md-12 form-group p_star">
+                    <!-- <div class="col-md-12 form-group p_star">
                       <select class="country_select">
                         <option value="1">District</option>
                         <option value="2">District</option>
@@ -202,14 +365,14 @@
                     </div>
                     <div class="col-md-12 form-group">
                       <input type="text" class="form-control" id="zip" name="zip" placeholder="Postcode/ZIP" />
-                    </div>
-                    <div class="col-md-12 form-group">
+                    </div> -->
+                    <!-- <div class="col-md-12 form-group">
                       <div class="creat_account">
                         <input type="checkbox" id="f-option2" name="selector" />
                         <label for="f-option2">Create an account?</label>
                       </div>
-                    </div>
-                    <div class="col-md-12 form-group">
+                    </div> -->
+                    <!-- <div class="col-md-12 form-group">
                       <div class="creat_account">
                         <h3>Shipping Details</h3>
                         <input type="checkbox" id="f-option3" name="selector" />
@@ -217,7 +380,13 @@
                       </div>
                       <textarea class="form-control" name="message" id="message" rows="1"
                         placeholder="Order Notes"></textarea>
-                    </div>
+                    </div> -->
+                    <button class="btn btn-submit" type="submit" name="submit">Submit</button>
+
+                    <a type="button" href="https://api.whatsapp.com/send?phone=+628562235309" target="_blank" class="btn" style="background-color: #1DBEA5; margin-left: 20px;">
+                    Pesan Melalui Whatsapp
+                    </a>
+
                   </form>
                 </div>
                 <!-- <div class="col-lg-4">
