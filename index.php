@@ -119,7 +119,7 @@
                             </div> -->
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 d-none d-sm-block">
                                 <div class="hero__img" data-animation="bounceIn" data-delay=".4s">
-                                    <img src="assets/img/The Future.png" alt="" class=" heartbeat" style="margin: 0 auto; max-width:800px;">
+                                    <img src="assets/img/The Future.png" alt="" class=" heartbeat" style="margin: 0 auto; width:100%; height: 100%;">
                                 </div>
                             </div>
                         </div>
@@ -141,7 +141,7 @@
                             </div> -->
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 d-none d-sm-block">
                                 <div class="hero__img" data-animation="bounceIn" data-delay=".4s">
-                                    <img src="assets/img/The Future.png" alt="" class=" heartbeat" style="margin: 0 auto; max-width:800px;">
+                                    <img src="assets/img/The Future.png" alt="" class=" heartbeat" style="margin: 0 auto; width:100%; height: 100%;">
                                 </div>
                             </div>
                         </div>
