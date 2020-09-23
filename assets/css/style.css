@@ -2040,10 +2040,6 @@ input:focus {
   z-index: 9 !important;
   position: relative; }
 
-@media only screen and (min-width: 1200px) and (max-width: 3640px) {
-  .container {
-    max-width: 1170px; } }
-
 @media (max-width: 1200px) {
   [class*="hero-ani-"] {
     display: none !important; } }
@@ -2387,9 +2383,6 @@ input:focus {
   overflow: hidden; }
   .slider-area .hero__img {
     position: relative; }
-    @media (min-width: 1200px) and (max-width: 1400px) {
-      .slider-area .hero__img {
-        left: -104px; } }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .slider-area .hero__img img {
         height: 500px; } }
@@ -3238,36 +3231,6 @@ input:focus {
     .gallery-wrapper .gallery-area .gallery-items {
       width: 50%; } }
 
-.footer-area .footer-logo {
-  margin-bottom: 40px; }
-
-.footer-area .footer-pera p {
-  color: #fff;
-  font-size: 16px;
-  margin-bottom: 50px;
-  line-height: 1.8; }
-
-.footer-area .footer-pera.footer-pera2 p {
-  padding: 0; }
-
-.footer-area .footer-tittle h4 {
-  color: #fff;
-  font-size: 20px;
-  margin-bottom: 29px;
-  font-weight: 500;
-  text-transform: capitalize;
-  font-family: "Roboto", sans-serif; }
-
-.footer-area .footer-tittle ul li {
-  color: #fff;
-  margin-bottom: 15px; }
-  .footer-area .footer-tittle ul li a {
-    color: #787878;
-    font-weight: 300; }
-    .footer-area .footer-tittle ul li a:hover {
-      color: white;
-      padding-left: 5px; }
-
 .footer-area {
   background-color: black; }
   .footer-area .footer-logo {
@@ -3290,10 +3253,10 @@ input:focus {
     color: #fff;
     margin-bottom: 15px; }
     .footer-area .footer-tittle ul li a {
-      color: #3F3F3F;
+      color: #787878;
       font-weight: 300; }
       .footer-area .footer-tittle ul li a:hover {
-        color: #ff2020;
+        color: white;
         padding-left: 5px; }
 
 .footer-copy-right {
@@ -7106,6 +7069,9 @@ input:focus {
 ============================================================================================ */
 .checkout_area p {
   font-size: 14px; }
+
+.checkout_area .btn-wa {
+  background-color: chartreuse; }
 
 .checkout_area .form-control {
   font-size: 14px;

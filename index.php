@@ -424,7 +424,7 @@
                                 <ul>
                                     <li><a href="#">Motor listrik</a></li>
                                     <li><a href="#">Lokasi kami</a></li>
-                                    <li><a href="about.html"> Tentang Kami</a></li>
+                                    <li><a href="about.php"> Tentang Kami</a></li>
                                     <li><a href="#"> Media Center</a></li>
                                     <li><a href="#"> Test Drive</a></li>
                                     <li><a href="#"> Pesan Sekarang</a></li>
