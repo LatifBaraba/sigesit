@@ -161,7 +161,7 @@
                             </div>
                             <div class="product-caption">
                                 <h3>
-                                    <a href="contact.html">Lokasi kami</a>
+                                    <a href="contact.php">Lokasi kami</a>
                                 </h3>
                                 <span> Temukan Lokasi </span>
                             </div>

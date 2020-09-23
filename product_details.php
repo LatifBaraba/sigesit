@@ -66,7 +66,7 @@
                             <nav>                                                
                                 <ul id="navigation">  
                                     <li><a href="#">PRODUK</a></li>
-                                    <li><a href="contact.html">LOKASI KAMI</a></li>
+                                    <li><a href="contact.php">LOKASI KAMI</a></li>
                                     <li><a href="">TENTANG KAMI</a>
                                         <ul class="submenu">
                                             <li><a href="about.html"> Profil Perusahaan</a></li>
