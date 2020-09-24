@@ -126,6 +126,10 @@
             // $_SESSION['emailgagal']=1;
     }
   }
+
+  function waSend() {
+    header("Location: https://wa.me/6281809000715?text=Pemesanan%20GesitsPradana%20Website%0ASaudara%20".$_POST['name']."%20".$_POST['lastname']."%20dengan%20nomor%20".$_POST['number']."%20email%20".$_POST['email']."%0Amemesan%20Gesits%20dengan%20warna%20".$_SESSION['order']['warna']."%20dan%20jumlah%20".$_SESSION['order']['qty']);
+  }
  
   if(isset($_POST["submit"])) {
     // var_dump($_POST['name'], $_POST['lastname']); exit;
@@ -152,6 +156,10 @@
 
     }
     // var_dump($_SESSION['checkout']); exit;
+  }
+  if(isset($_POST['wa'])) {
+
+    waSend();
   }
 ?>
 <!doctype html>
@@ -391,9 +399,10 @@
                         placeholder="Order Notes"></textarea>
                     </div> -->
                     <button class="btn btn-submit" type="submit" name="submit">Submit</button>
+                    <button class="btn btn-success" type="submit" name="wa" style="background-color: #1DBEA5; margin-left: 20px;">Send WHATSAPP</button>
 
-                    <a type="button" href="https://api.whatsapp.com/send?phone=" target="_blank" class="btn" style="background-color: #1DBEA5; margin-left: 20px;">
-                    Pesan Melalui Whatsapp
+                    <!-- <a type="button" name="wa" href="https://wa.me/6281510880334?text=Pemesanan%20GesitsPradana%20Web%20Saudara%20<?= $_POST['name']?>" target="_blank" class="btn" style="background-color: #1DBEA5; margin-left: 20px;">
+                    Pesan Melalui Whatsapp -->
                     </a>
 
                   </form>
