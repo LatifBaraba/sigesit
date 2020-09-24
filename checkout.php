@@ -8,12 +8,9 @@
 
   // Load Composer's autoloader
   //require 'vendor/autoload.php';
-  // require 'PHPMailer/src/Exception.php';
-  // require 'PHPMailer/src/PHPMailer.php';
-  // require 'PHPMailer/src/SMTP.php';
-  require 'phpmailer/src/Exception.php';
-  require 'phpmailer/src/PHPMailer.php';
-  require 'phpmailer/src/SMTP.php';
+  require 'PHPMailer/src/Exception.php';
+  require 'PHPMailer/src/PHPMailer.php';
+  require 'PHPMailer/src/SMTP.php';
 
   function mailSend() {
     // var_dump($_SESSION['checkout']['name']); exit;
@@ -211,6 +208,7 @@
                                     <ul class="submenu">
                                         <li><a href="#">Berita</a></li>
                                         <li><a href="#">Blog Details</a></li>
+                                        <li><a href="faq.php">Faq</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#">PESAN SEKARANG</a>

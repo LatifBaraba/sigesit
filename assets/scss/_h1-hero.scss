@@ -37,9 +37,6 @@
    overflow: hidden;
     .hero__img{
         position: relative;
-        @media #{ $large1}{
-            
-        }
         img{
             @media #{$lg}{
                 height: 500px;

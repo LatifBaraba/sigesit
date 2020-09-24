@@ -63,6 +63,7 @@
                                         <ul class="submenu">
                                             <li><a href="#">Berita</a></li>
                                             <li><a href="#">Blog Details</a></li>
+                                            <li><a href="faq.php">Faq</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="product_details.php">PESAN SEKARANG</a>
